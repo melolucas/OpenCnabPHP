@@ -122,7 +122,7 @@ class Registro3P extends Generico3 {
         ),
         'nosso_numero' => array(
             'tamanho' => 13,
-            'default' => '',
+            'default' => '0',
             'tipo' => 'int',
             'required' => true
         ),
