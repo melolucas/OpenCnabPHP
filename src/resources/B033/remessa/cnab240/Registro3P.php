@@ -122,14 +122,14 @@ class Registro3P extends Generico3 {
         ),
         'nosso_numero' => array(
             'tamanho' => 13,
-            'default' => '0',
+            'default' => '',
             'tipo' => 'int',
             'required' => true
         ),
         'tipo_cobranca' => array(
             'tamanho' => 1,
             'default' => '5',
-            'tipo' => 'int',
+            'tipo' => 'alfa',
             'required' => true
         ),
         'forma_cadastramento' => array(
@@ -350,7 +350,7 @@ class Registro3P extends Generico3 {
      * @param int $value
      */
     protected function set_nosso_numero($value) {
-        $this->data['nosso_numero'] = $value . self::modulo11($value);
+        $this->data['nosso_numero'] = $value; //. self::modulo11($value);
     }
 
     /**
