@@ -327,7 +327,7 @@ class Registro3P extends Generico3 {
         ),
         'prazo_baixar' => array(
             'tamanho' => 2,
-            'default' => '90',
+            'default' => '00',
             'tipo' => 'int',
             'required' => true
         ),
